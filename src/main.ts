@@ -59,6 +59,11 @@ baseRouter.get("/", async (request, response) => {
 });
 
 relayRouter.post("/relay", async (request, response) => {
+  const { requestUri, requestHeaders } = request.body;
+
+  // make sure that the request body has the correct properties
+  // UNFINISHED
+
   // tslint:disable-next-line:no-console
   console.log('relay request', request.body)
   response.send({
