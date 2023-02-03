@@ -13,7 +13,7 @@ export class AxiosTORService {
     controlPassword: 'giraffe',
   };
 
-  async torSetup({ ip = 'localhost', port = '9050', path = '', controlPort = '9051', controlPassword = 'giraffe' }) {
+  async torSetup({ ip = 'localhost', port = '9050', path = '', controlPort = '9050', controlPassword = 'giraffe' }) {
 
     this.torConfig.ip = ip === 'localhost' ? '127.0.0.1' : ip;
     this.torConfig.port = port;
